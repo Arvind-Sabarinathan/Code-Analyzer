@@ -22,7 +22,7 @@ software_defect_prediction_model = None
 
 #software_defect_prediction_model = joblib.load('../models/ml_model.pkl')
 
-with open('../models/ml_model.pkl', 'rb') as file:
+with open('ml_model.pkl', 'rb') as file:
     software_defect_prediction_model = pickle.load(file)
 
 
