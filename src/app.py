@@ -2,6 +2,7 @@ import math
 import streamlit as st
 import ast
 import joblib
+import pickle
 
 from radon.complexity import cc_visit, cc_rank
 from radon.metrics import mi_visit
@@ -14,8 +15,16 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
+    
+    
 # Load the pre-trained model
-software_defect_prediction_model = joblib.load('../models/ml_model.pkl')
+
+software_defect_prediction_model = None
+
+#software_defect_prediction_model = joblib.load('../models/ml_model.pkl')
+
+with open('../models/ml_model.pkl', 'rb') as file:
+    software_defect_prediction_model = pickle.load(file)
 
 
 # Title and description
