@@ -4,7 +4,7 @@ radon
 pandas
 matplotlib
 scipy
-sklearn
+scikit-learn
 xgboost
 imblearn
 tensorflow
