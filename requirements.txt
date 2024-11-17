@@ -1,6 +1,5 @@
+pip
 streamlit
-ast
-pickle
 radon
 pandas
 matplotlib
