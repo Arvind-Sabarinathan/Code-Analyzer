@@ -3,3 +3,8 @@ streamlit
 radon
 pandas
 matplotlib
+scipy
+sklearn
+xgboost
+imblearn
+tensorflow
